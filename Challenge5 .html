@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Position Absolute + Relative Challenge</title>
+    <Style>
+
+      .wakanda
+      {
+        position: relative; width: 250px; height: 250px; margin-left: 35px; margin-top: 35px; z-index: 3; cursor: pointer;
+      }
+
+      .wakanda:hover .design-center
+      {
+        opacity: 1;
+      }
+
+      .design-center
+      {
+        position: absolute; width: 250px; height: 69px; bottom: 0; background-color: rgba(255, 255, 255, 0.70); z-index: 4; display: flex; justify-content: center; align-items: center; opacity: 0; font-family: Arial; font-size: 10px; padding-left: 10px; padding-right: 10px; padding-top: 8px; padding-bottom: 8px; border-color: black; border-width: 1px; border-style: solid; transition: opacity 0.3s; cursor: default;
+      }
+    </Style>
+  </head>
+  <body style="height: 3000px;">
+    <div class="wakanda">
+      <img style="width: 100%; height: 100%" src="channels/Coat.webp">
+      <div style="position: absolute; top: 10px; right: 0; background-color: black; color: white; font-family: Arial; padding-right: 5px; padding-left: 5px; padding-top: 4px; padding-bottom: 4px; font-size: 14px;">20% OFF</div>
+      <div class="design-center"><button style=" cursor: pointer;">Add to Cart</button></div>
+    </div>
+  </body>
+</html>
